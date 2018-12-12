@@ -15,6 +15,46 @@
 
 /* Table Styles */
 
+/* The 'Table Styles' section styles the outer table, or the table with the class of 'spuzzle', the data cells, & its header cells; giving them a border, color, width, & space. */
 
+table.spuzzle {
+    border-collapse: collapse;
+    margin: 0px auto;
+    width: 90%;
+}
+
+td {
+    border: 5px outset gray;
+    width: 33.3%;
+}
+
+th {
+    color: gray;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
 
 /* Inner Table Styles */
+
+/* The second block of code is responsible for styling the inner table, or the table with the class of 'subTable'. Its responsible for most of the styles for both tables. It gives the inner table a larger width, the data cells within, a boxshadow, a border, a larger height, color, & centers the text/numbers within. This section is also responsible for colorizing the 81 data cells inside the inner table, creating a 3x3 pattern of green-gold-green. */
+
+table.subTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.subTable td {
+    box-shadow: inset 0px 0px 15px;
+    border: 1px solid black;
+    color: blue;
+    height: 40px;
+    text-align: center;
+}
+
+td td {
+    background-color: rgb(228, 199, 42);
+}
+
+td.greenBox td {
+    background-color: rgb(203, 229, 130);
+}
